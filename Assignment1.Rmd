@@ -1,0 +1,26 @@
+---
+title: "Week 2 Assignment"
+date: "11/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
+
+## Review criteria
+
+1.Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+
+2.Does the web page feature an interactive map that appears to have been created with Leaflet?
+
+### November 8, 2021
+
+```{r, echo=FALSE}
+
+my_map <- leaflet() %>% 
+  addTiles() %>% addMarkers(lat=28.375392153922956, lng=-81.54953981992243, 
+             popup="Happiest Place on Earth!!!") 
+my_map
+```
